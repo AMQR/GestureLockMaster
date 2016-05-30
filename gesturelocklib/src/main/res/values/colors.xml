@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="deep_gray">#6C778A</color>  <!--外圆正常颜色-->
+    <color name="deep_bule">#194267</color>  <!--外圆选中颜色-->
+    
+    <color name="normal_gray">#646464</color>  <!--  内圆正常颜色-->
+    <color name="litle_blue">#02D2E1</color>  <!--  内圆选中颜色-->
+    <color name="red">#ff0000</color>  <!--  连接错误时内圆颜色-->
+    <color name="ared">#66ff0000</color>  <!--  连接错误醒目提示颜色-->
+    <color name="ablue">#6602D2E1</color>  <!-- 连接线颜色 -->
+
+
+    <color name="ok_green">#73d622</color>  <!-- 提示正确内圆的颜色 -->
+    <color name="agreen">#6673d622</color>  <!-- 提示正确外圆和连接线的颜色 -->
+
+
+
+
+
+</resources>
