@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/GestureLockMaster.iml" filepath="$PROJECT_DIR$/GestureLockMaster.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ges.iml" filepath="$PROJECT_DIR$/Ges.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/gesturelocklib/gesturelocklib.iml" filepath="$PROJECT_DIR$/gesturelocklib/gesturelocklib.iml" />
     </modules>

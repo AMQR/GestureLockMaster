@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:color="@color/colorAccent" android:state_pressed="true" />
+    <!-- pressed -->
+    <item android:color="@color/colorAccent" android:state_selected="true" />
+    <!-- focused -->
+    <item android:color="@color/cardview_dark_background" />
+    <!-- default -->
+
+</selector>

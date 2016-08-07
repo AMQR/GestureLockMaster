@@ -1,12 +1,11 @@
 package com.am.gesturelockmaster.activity;
 
-import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.am.gesturelocklib.widget.GestureLockView;
+import com.am.gesturelockmaster.BaseActivity;
 import com.am.gesturelockmaster.R;
 import com.am.gesturelockmaster.utils.CacheUtils;
 import com.am.gesturelockmaster.utils.MyConst;
@@ -14,7 +13,7 @@ import com.am.gesturelockmaster.utils.MyConst;
 /**
  * Created by AM on 2016/4/29.
  */
-public class SetGesPwdActivity extends Activity {
+public class SetGesPwdActivity extends BaseActivity {
 
 
     private TextView mTvTip;
@@ -50,10 +49,12 @@ public class SetGesPwdActivity extends Activity {
                 } else {// 如果输入过第一次密码，那么做比较
                     if (tempKey.equals(gestureCode)) {
                         mGlvSet.setUpDiyColor(true);
-                        Toast.makeText(SetGesPwdActivity.this, "设置密码成功", Toast.LENGTH_SHORT).show();
+
                         // 把手势密码缓存起来
                         CacheUtils.setString(SetGesPwdActivity.this, MyConst.GESTRUE_PWD_KEY,gestureCode);
-                        startActivity(new Intent(SetGesPwdActivity.this,CheckGesPwdActivity.class));
+                        CacheUtils.setBoolean(SetGesPwdActivity.this,MyConst.GESTRUE_IS_LIVE,true);
+                        Toast.makeText(SetGesPwdActivity.this, "设置密码成功", Toast.LENGTH_SHORT).show();
+                        //startActivity(new Intent(SetGesPwdActivity.this,CheckGesPwdActivity.class));
                         finish();
                     } else {
                         mGlvSet.setUpDiyColor(false);
